@@ -1,5 +1,5 @@
 extension StringCapitalise on String {
-  String camelizeCapitalise() {
+  String capitalise() {
     return '${this[0].toUpperCase()}${substring(1).toLowerCase()}';
   }
 }
@@ -14,7 +14,7 @@ extension CamelCapitalise on List<String> {
     for (var l = 0; l < list.length; l++) {
       var temp = list[l].split(pattern), temp2 = [];
       for (var i = 0; i < temp.length; i++) {
-        var captalised = temp[i].camelizeCapitalise();
+        var captalised = temp[i].capitalise();
         if (temp.length - 1 == i) {
           temp2.add(captalised);
         } else {
